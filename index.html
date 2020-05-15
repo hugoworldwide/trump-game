@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Help Trum Catch the Virus!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid " style="color: rgb(0, 0, 0);">
+        <div class="row h-100 info-Hugo ">
+            <div class="col-4   infor">
+                <h1>Make Trump Catch The Virus!</h1>
+                <div class="container">
+                    <div>
+                        <div class="form">
+                            <form>
+                                <input type="text" id="name">
+                                <input type="button" onclick="userName()" value="What's your username?!">
+                                <div id="usernameArea"></div>
+                            </form>
+                        </div>
+
+                        <div>
+                            <span class="score" id="scoreHTML">0</span>
+                        </div>
+
+                        <div>
+                            <div id="timecount"> Your time is counted</div>
+                        </div>
+
+
+                        <div class="music">
+                            <div>You Are Listening to Radio Trump <br> Currently Playing : American National Anthem
+                            </div>
+                            <button class="button-bg" id="volOff" data-toggle="tooltip" data-placement="top" title=""
+                                data-original-title="Sound Off">
+                                <img src="images/volumeoff.png">
+                            </button>
+                            <span>
+                                <button class="button-bg" id="volOn" data-toggle="tooltip" data-placement="top" title=""
+                                    data-original-title="Sound On">
+                                    <img src="images/volumeon.png">
+                                </button>
+                            </span>
+                        </div>
+                        <button id="Reset" onclick="resetGame()"> Reset Game</button>
+
+                        <div>
+                            <audio id="myBgMusic" autoplay="autoplay">
+                                <source src="sound/national.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8   infor">
+                <canvas id="mycanvas" class="border"></canvas>
+            </div>
+
+        </div>
+        <script src="game.js"></script>
+</body>
+
+</html>
